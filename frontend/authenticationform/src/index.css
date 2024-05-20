@@ -1,0 +1,302 @@
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.form-container .msg{
+  color:red;
+  text-emphasis:bold;
+  
+}
+
+.form-container {
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 10px  20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.form-container label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-container input[type="number"],
+.form-container input[type="text"],
+.form-container select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-container select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+
+.form-container button:nth-child(2) {
+  margin-top: 0;
+}
+
+/* Optional: Style for the NavLink */
+.form-container a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.form-container a:hover {
+  color: #0056b3;
+}
+.header {
+  
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.header h3 {
+  margin: 0;
+  text-align: center;
+}
+.add{
+  display: flex;
+  margin :10px;
+}
+
+
+.add button  {
+  padding: 8px 16px;
+  border: none;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add button:hover {
+  background-color: #218838;
+}
+
+/* Optional: Style for the Link */
+.add a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.add a:hover {
+  color: #f8f9fa;
+}
+
+.table-container {
+  max-width: 800px; /* Adjust as needed */
+  margin: 0 auto;
+  
+}
+
+/* Style for the table */
+.table-container table {
+  width: 100%;
+  margin:20px;
+  border-collapse: collapse;
+  border:3px solid black;
+}
+
+/* Style for table header */
+.table-container th {
+  align-items: center;
+  padding: 10px;
+  text-align: left;
+  
+}
+
+/* Style for table data cells */
+.table-container td {
+  padding: 10px;
+  /* Border color for data cells */
+}
+
+/* Style for alternate row colors */
+.table-container tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Background color for even rows */
+}
+
+/* Style for hover effect on rows */
+.table-container tbody tr:hover {
+  background-color: #e2e2e2; /* Background color on hover */
+}
+
+/* Style for action buttons */
+.table-container button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: wheat;
+  margin:5px;
+  cursor: pointer;
+  
+}
+
+.signup ,.signin{
+  margin: 0 auto;
+  width:400px;
+  border:3px solid blueviolet;
+  box-shadow: 2px gray;
+  padding:20px;
+  justify-items: center;
+  background-color: rgb(162, 200, 238);
+  padding-top:0;
+} 
+#form,#form-signin{
+  padding:10px;
+}
+#form label,#form-signin label{
+  display: block;
+  margin-bottom: 10px;
+}
+#form input ,
+#form-signin input{
+  margin-bottom: 10px;
+}
+#form input[type="number"],
+#form input[type="text"],
+#form input[type="email"],
+#form input[type="password"],
+#form input[type="conformpassword"],
+
+#form-signin input[type="text"],
+#form-signin input[type="email"],
+#form-signin input[type="password"]{
+  padding:10px;
+  width:100%;
+  font-size: medium;
+  border-radius: 5px;
+  
+}
+.signup h3,.signin h3{
+  text-align: center;
+  color:rgb(246, 12, 12);
+  
+}
+#form .btn-signup, #form-signin .btn-signin{
+  padding:15px;
+  border-radius: 5px;
+  font-size:medium;
+  width:100%;
+  background-color: rgb(247, 163, 54);
+  cursor: pointer;
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+#form .btn-signup:hover,#form .btn-signin:hover{
+ background-color: #28a745;
+}
+#form .signinlink{
+  place-items: center;
+
+}
+/* Modal container styling */
+.modals{
+  display: none; /* Hide modal by default */
+    position: fixed; /* Position the modal */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 999; /* Ensure the modal is on top */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.modal {
+  
+  background-color: #3dabb3;
+  padding: 50px;
+  border-radius: 5px;
+  margin-top: 30px;
+  width:300px;
+  height: 200px;
+  place-content: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+}
+
+/* Close button styling */
+.close-button {
+  position: absolute;
+  /* Adjust as needed */
+  top:40px;
+  right:35%; 
+  /* Adjust as needed */
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Close button hover effect */
+.close-button:hover {
+  background-color: #d32f2f;
+}
+.modal img{
+  width:100px;
+  height: 100px;
+  border:1px solid lightcyan;
+  border-radius: 50px;
+}
+
+.details1{
+  position:absolute;
+  margin:50px 40%;
+  box-shadow: 10px 10px 500px rgba(3, 248, 134, 0.904); 
+  padding:20px;
+  width: 400px;
+
+
+}
+.details1 label{
+  font-size:larger;
+  color:red;
+}
